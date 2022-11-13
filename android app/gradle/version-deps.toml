@@ -1,0 +1,70 @@
+[versions]
+android = "7.3.0"
+appcompat = "1.5.1"
+kotlin = "1.7.0"
+hilt = "2.44.1"
+compose = "1.2.1"
+compose-compiler = "1.2.0"
+core = "1.9.0"
+activity = "1.6.0"
+coroutines = "1.6.4"
+constraintLayout = "2.1.4"
+hilt-navigation = "1.0.0"
+navigation = "2.5.3"
+material = "1.7.0"
+okhttp = "4.10.0"
+retrofit = "2.9.0"
+serialization = "1.4.1"
+converterFactory = "0.8.0"
+room = "2.4.3"
+lifecycle = "2.5.1"
+circleVersion = "3.1.0"
+desugarJdkLibs = "1.1.5"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android" }
+android-library = { id = "com.android.library", version.ref = "android" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+safeArgs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation"}
+
+[libraries]
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+core = { module = "androidx.core:core-ktx", version.ref = "core" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+
+desugarJdkLibs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugarJdkLibs" }
+
+activity = { module = "androidx.activity:activity-compose", version.ref = "activity" }
+constraintLayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintLayout" }
+
+compose-tooling = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-material = { module = "androidx.compose.material:material", version.ref = "compose" }
+
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+
+lifecycle-core = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+
+navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+
+okhttp-bom = { module = "com.squareup.okhttp3:okhttp-bom", version.ref = "okhttp" }
+okhttp-core = { module = "com.squareup.okhttp3:okhttp" }
+okhttp-log = { module = "com.squareup.okhttp3:logging-interceptor" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+converterFactory = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "converterFactory" }
+
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-navigation = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-navigation" }
+
+circleImageView = { module = "de.hdodenhof:circleimageview", version.ref = "circleVersion" }

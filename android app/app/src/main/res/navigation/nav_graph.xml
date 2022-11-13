@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signingScreen">
+
+    <fragment
+        android:id="@+id/chatMenuScreen"
+        android:name="com.otkritie.hackaton.screens.chatmenu.ChatMenuScreen"
+        android:label="fragment_chat_menu_screen"
+        tools:layout="@layout/fragment_chat_menu_screen" >
+        <action
+            android:id="@+id/action_chatMenuScreen_to_chatScreen"
+            app:destination="@id/chatScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signingScreen"
+        android:name="com.otkritie.hackaton.screens.signing.SigningScreen"
+        android:label="fragment_signing_screen"
+        tools:layout="@layout/fragment_signing_screen" >
+        <action
+            android:id="@+id/action_signingScreen_to_chatMenuScreen"
+            app:destination="@id/chatMenuScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatScreen"
+        android:name="com.otkritie.hackaton.screens.chat.ChatScreen"
+        android:label="fragment_chat_screen"
+        tools:layout="@layout/fragment_chat_screen" >
+        <action
+            android:id="@+id/action_chatScreen_to_chatMenuScreen"
+            app:destination="@id/chatMenuScreen" />
+        <argument
+            android:name="myId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
