@@ -11,7 +11,7 @@
         android:id="@+id/iv_avatar"
         android:layout_width="96dp"
         android:layout_height="85dp"
-        android:src="@drawable/test_avatar"
+        android:src="@drawable/logo_bank"
         app:civ_border_color="@color/white"
         app:civ_border_width="2dp"
         app:layout_constraintBottom_toBottomOf="parent"

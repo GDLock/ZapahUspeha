@@ -37,6 +37,7 @@
         android:id="@+id/chat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,9 +47,9 @@
             android:id="@+id/iv_avatar"
             android:layout_width="96dp"
             android:layout_height="85dp"
-            android:src="@drawable/test_avatar"
+            android:src="@drawable/logo_bank"
             app:civ_border_color="@color/white"
-            app:civ_border_width="2dp"/>
+            app:civ_border_width="2dp" />
 
         <LinearLayout
             android:id="@+id/ll_info_chat"
@@ -62,10 +63,10 @@
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Поддержка"
                 android:textColor="@color/black"
                 android:textSize="26sp"
-                android:textStyle="bold"
-                tools:text="Поддержка" />
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
@@ -77,23 +78,23 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="2"
-                android:textSize="18sp"
-                tools:text="ffffffffffffffffffffffffffffffffffffffffffffffffggggggggggggggggggfgggggggggggggggggggggfffffffffffffffff fgfgfg dffgggg ggg gg gggggg ggggg ggg gggggggggg rrrrr rrrrrrrrrrrrrrrrrrrrrrrrrr" />
+                android:text="Новое сообщение"
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/rv_chatList"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginBottom="5dp"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/rv_listQuestions"-->
-<!--        tools:listitem="@layout/chats_item_layout" />-->
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/rv_chatList"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginBottom="5dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/rv_listQuestions"-->
+    <!--        tools:listitem="@layout/chats_item_layout" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

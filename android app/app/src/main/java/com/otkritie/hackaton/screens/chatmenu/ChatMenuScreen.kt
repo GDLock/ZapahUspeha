@@ -18,12 +18,12 @@ import dagger.hilt.android.AndroidEntryPoint
 class ChatMenuScreen : Fragment() {
 
 
-    private val lst = listOf<Question>(
-        Question(R.drawable.test_avatar, "С чего начать"),
-        Question(R.drawable.test_avatar, "Как инвестировать"),
-        Question(R.drawable.test_avatar, "Какие акции покупать первыми"),
-        Question(R.drawable.test_avatar, "С чего начать"),
-        Question(R.drawable.test_avatar, "С чего начать"),
+    private val lst = listOf(
+        Question(R.drawable.logo_bank, "С чего начать"),
+        Question(R.drawable.logo_bank, "Как инвестировать"),
+        Question(R.drawable.logo_bank, "Какие акции покупать первыми"),
+        Question(R.drawable.logo_bank, "С чего начать"),
+        Question(R.drawable.logo_bank, "С чего начать"),
     )
 
     private val viewModel by viewModels<ChatMenuViewModel>()
@@ -58,18 +58,6 @@ class ChatMenuScreen : Fragment() {
     override fun onDestroy() {
         super.onDestroy()
         _binding = null
-    }
-
-
-    companion object {
-        @JvmStatic
-        fun newInstance(myId: Int) = ChatMenuScreen().apply {
-            arguments = Bundle().apply {
-                putInt("chatId", myId)
-            }
-
-        }
-
     }
 
 }
